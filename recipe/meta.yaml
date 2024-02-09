@@ -39,7 +39,7 @@ about:
   home: https://daizutabi.github.io/mkapi/
   summary: An Auto API Documentation tool.
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
