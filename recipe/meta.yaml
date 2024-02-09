@@ -1,5 +1,5 @@
 {% set name = "mkapi" %}
-{% set version = "1.0.14" %}
+{% set version = "2.0.4" %}
 
 
 package:
@@ -8,23 +8,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkapi-{{ version }}.tar.gz
-  sha256: b9b75ffeeeb6c29843ca703abf30464acac76c0867ca3ca66e3a825c0f258bb1
+  sha256: d86c3244b518dc89094520c4b4f67beaf831b866754bfebf99cd8a426951a152
 
 build:
   number: 0
   noarch: python
-  entry_points:
-    - mkapi = mkapi.main:cli
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.10
+    - hatchling
   run:
     - jinja2
-    - markdown
-    - python >=3.7
+    - python >=3.10
+    - halo
+    - tqdm
+    - mkdocs-material
 
 test:
   imports:
@@ -35,10 +36,10 @@ test:
     - pip
 
 about:
-  home: https://mkapi.daizutabi.net
+  home: https://daizutabi.github.io/mkapi/
   summary: An Auto API Documentation tool.
   license: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
 
 extra:
   recipe-maintainers:
