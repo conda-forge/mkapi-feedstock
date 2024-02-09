@@ -13,18 +13,19 @@ source:
 build:
   number: 0
   noarch: python
-  entry_points:
-    - mkapi = mkapi.main:cli
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.10
+    - hatchling
   run:
     - jinja2
-    - markdown
-    - python >=3.7
+    - python >=3.10
+    - halo
+    - tqdm
+    - mkdocs-material
 
 test:
   imports:
@@ -35,7 +36,7 @@ test:
     - pip
 
 about:
-  home: https://mkapi.daizutabi.net
+  home: https://daizutabi.github.io/mkapi/
   summary: An Auto API Documentation tool.
   license: MIT
   license_file: LICENSE
