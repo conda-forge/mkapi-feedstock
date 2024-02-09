@@ -3,7 +3,7 @@ About mkapi-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mkapi-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mkapi.daizutabi.net
+Home: https://daizutabi.github.io/mkapi/
 
 Package license: MIT
 
