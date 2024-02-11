@@ -1,5 +1,5 @@
 {% set name = "mkapi" %}
-{% set version = "2.0.6" %}
+{% set version = "2.0.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mkapi-{{ version }}.tar.gz
-  sha256: a3f90b2fbac81c28cb3291c3183cb52727522641c9da591025600e3367028bde
+  sha256: f20ae7f78447e18a9fd852ecfd2dff8eb5d58d4be3193d26e9b464dbf75eec95
 
 build:
   number: 0
