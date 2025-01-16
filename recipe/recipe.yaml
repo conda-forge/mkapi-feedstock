@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mkapi
-  version: 3.0.4
+  version: "3.0.22"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/mkapi-${{ version }}.tar.gz
-  sha256: c45bc21ebe7d59f00aa5e1159551854faa0aa01e4a0d3909787eee317fb2d458
+  sha256: 722f9751145dd0ce8b3c22613cb3d1aadc19b59568358da0a88c7b85d0279fce
 
 build:
   number: 0
