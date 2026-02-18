@@ -13,7 +13,7 @@ source:
   sha256: c45bc21ebe7d59f00aa5e1159551854faa0aa01e4a0d3909787eee317fb2d458
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python -m pip install . -vv
 
@@ -29,9 +29,7 @@ requirements:
     - omegaconf
     - rich
     - mkdocs-material
-    - if: match(python, "<3.11")
-      then:
-        - tomli >=1.1.0
+    - tomli >=1.1.0
 
 tests:
   - python:
